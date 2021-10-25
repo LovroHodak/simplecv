@@ -1,0 +1,41 @@
+.thirdEducation {
+  text-align: center;
+  background-color: orchid;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  margin: 15px;
+  text-align: center;
+  text-decoration-line: underline;
+  text-decoration-color: darkred;
+}
+
+/* Button */
+.pushable {
+    margin: 15px 5px;
+    background: hsl(340deg 100% 32%);
+    border-radius: 12px;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline-offset: 4px;
+  }
+  .front {
+    display: block;
+    padding: 12px 42px;
+    border-radius: 12px;
+    font-size: 1.25rem;
+    background: hsl(345deg 100% 47%);
+    color: white;
+    transform: translateY(-6px);
+    min-width: 18rem;
+  }
+  
+  .pushable:active .front {
+    transform: translateY(-2px);
+  }

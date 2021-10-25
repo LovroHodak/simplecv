@@ -1,23 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+
+import FirstFotoHello from './FirstFotoHello';
+import SecondAbout from './SecondAbout';
+import ThirdEducation from './ThirdEducation';
+import FourthStack from './FourthStack';
+import FifthLinks from './FifthLinks';
+import SixStayInTouch from './SixStayInTouch';
+import WorkExperience from './WorkExperience';
+
+
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <FirstFotoHello />
+      <SecondAbout />
+      <ThirdEducation />
+      <WorkExperience />
+      <FourthStack />
+      <FifthLinks />
+      <SixStayInTouch />
     </div>
   );
 }

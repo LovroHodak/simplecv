@@ -1,0 +1,16 @@
+.fifthLinks {
+  text-align: center;
+  background-color: wheat;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  margin: 15px;
+  text-align: center;
+  text-decoration-line: underline;
+  text-decoration-color: darkred;
+}
