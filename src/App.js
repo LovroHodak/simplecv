@@ -1,29 +1,59 @@
-import './App.css';
+import React from "react";
+import { Switch, Route, withRouter } from "react-router-dom";
 
-import FirstFotoHello from './FirstFotoHello';
-import SecondAbout from './SecondAbout';
-import ThirdEducation from './ThirdEducation';
-import FourthStack from './FourthStack';
-import FifthLinks from './FifthLinks';
-import SixStayInTouch from './SixStayInTouch';
-import WorkExperience from './WorkExperience';
+import "./App.css";
 
-
-
-
+import AboutDetail from "./AboutDetail";
+import Home from "./Home";
+import Navbarr from "./Navbarr";
+import EducationDet from "./EducationDet";
+import WorkDet from "./WorkDet";
+import StackDet from "./StackDet";
 
 function App() {
   return (
     <div className="App">
-      <FirstFotoHello />
-      <SecondAbout />
-      <ThirdEducation />
-      <WorkExperience />
-      <FourthStack />
-      <FifthLinks />
-      <SixStayInTouch />
+      <Switch>
+        <Route
+          exact
+          path="/"
+          render={() => {
+            return <Home />;
+          }}
+        />
+        <>
+          <Route
+            exact
+            path="/about"
+            render={() => {
+              return <AboutDetail />;
+            }}
+          />
+          <Route
+            exact
+            path="/education"
+            render={() => {
+              return <EducationDet />;
+            }}
+          />
+          <Route
+            exact
+            path="/work"
+            render={() => {
+              return <WorkDet />;
+            }}
+          />
+          <Route
+            exact
+            path="/stack"
+            render={() => {
+              return <StackDet />;
+            }}
+          />
+        </>
+      </Switch>
     </div>
   );
 }
 
-export default App;
+export default withRouter(App);

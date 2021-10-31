@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import "./SecondAbout.css";
 import { Card } from "react-bootstrap";
 
@@ -10,8 +12,9 @@ export default function SecondAbout() {
         style={{
           minWidth: "18rem",
           maxWidth: "54rem",
-          backgroundColor: "lightcoral",
+          backgroundColor: "#43262D",
           border: "none",
+          color: "white"
         }}
       >
         <Card.Body>
@@ -29,11 +32,11 @@ export default function SecondAbout() {
         </Card.Body>
       </Card>
 
-      <button className="pushable">
+      <Link to='/about'><button className="pushable">
         <span className="front">
-          Read more
+        Read more
         </span>
-      </button>
+      </button></Link>
     </div>
   );
 }

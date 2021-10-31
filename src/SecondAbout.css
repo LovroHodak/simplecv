@@ -1,6 +1,6 @@
 .secondAbout {
   text-align: center;
-  background-color: lightcoral;
+  background-color: #43262D;
 
   display: flex;
   flex-direction: column;
@@ -12,6 +12,7 @@
   text-align: center;
   text-decoration-line: underline;
   text-decoration-color: darkred;
+  color: white;
 }
 
 /* Button */

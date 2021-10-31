@@ -1,0 +1,30 @@
+.aboutDetDiv{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    background-color: #43262D;
+    padding: 10px;
+}
+
+.cardDiv{
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.card {
+    object-fit: contain;
+}
+
+
+@media only screen and (max-width: 800px) {
+    .aboutDetDiv {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-img{
+        max-height: 500px;
+        object-fit: cover;
+    }
+    
+  }
