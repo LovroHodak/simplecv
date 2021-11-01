@@ -9,7 +9,7 @@ export default function AboutDetail() {
   return (
     <div className='aboutDetDiv'>
         {/* <div className='wrapImgBack'></div> */}
-        <Card className='imgDiv' style={{backgroundColor: '#43262D'}}>
+        <Card className='imgDiv' style={{backgroundColor: '#43262D', border: 'none'}}>
           <Card.Img src={aboutDet} />
         </Card>
         <Link to='/'  style={{position: 'absolute', margin: 15}}><Button variant="dark">Go back</Button></Link>
